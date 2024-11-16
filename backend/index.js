@@ -30,6 +30,7 @@ app.use("/api/admin/details", require("./routes/Admin Api/details.route"));
 // Other Apis
 app.use("/api/timetable", require("./routes/Other Api/timetable.route"));
 app.use("/api/material", require("./routes/Other Api/material.route"));
+app.use("/api/project", require("./routes/Other Api/project.route"));
 app.use("/api/notice", require("./routes/Other Api/notice.route"));
 app.use("/api/subject", require("./routes/Other Api/subject.route"));
 app.use("/api/marks", require("./routes/Other Api/marks.route"));

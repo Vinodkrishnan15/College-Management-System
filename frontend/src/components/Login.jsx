@@ -7,7 +7,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { baseApiURL } from "../baseUrl";
 const Login = () => {
   const navigate = useNavigate();
-  const [selected, setSelected] = useState("Student");
+  const [selected, setSelected] = useState("Admin");
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     if (data.login !== "" && data.password !== "") {
@@ -15,7 +15,7 @@ const Login = () => {
         "Content-Type": "application/json",
       };
       axios
-        .post(`${baseApiURL()}/${selected.toLowerCase()}/auth/login`, data, {
+        .post(`${baseApiURL()}/${selected}/auth/login`, data, {
           headers: headers,
         })
         .then((response) => {

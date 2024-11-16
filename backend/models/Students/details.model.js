@@ -28,6 +28,8 @@ const studentDetails = new mongoose.Schema({
   semester: {
     type: Number,
     required: true,
+    //new line added down
+   // match: [/.+@.+\..+/, 'Please enter a valid email address'],
   },
   branch: {
     type: String,
